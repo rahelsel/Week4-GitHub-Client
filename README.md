@@ -1,5 +1,6 @@
-###Week 4: GitHub Client
-**This week:**
+#Week 4: GitHub Client
+
+##Overview
 >We will build our own GitHub Client that will.
 We will utilize OAuth, our AppDelegate, and UISearchBar to navigate the GitHub API.
 
