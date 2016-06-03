@@ -7,8 +7,14 @@
 * **Code Challenge:**
 	* Given a string, return a string where for every char in the original, there are two chars.
 			* Example: doubleChar("The") → "TThhee"
-* **Bonus:**
-	*
+
+##Reading Assignment:
+* Apple Documentation:
+  * WKWebView
+  * SafariViewController
+* General Concepts:
+  * Regex(Regular Expression)
+  * Input Validation
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)
