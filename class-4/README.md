@@ -9,12 +9,7 @@
 			* Example: doubleChar("The") → "TThhee"
 
 ##Reading Assignment:
-* Apple Documentation:
-  * WKWebView
-  * SafariViewController
-* General Concepts:
-  * Regex(Regular Expression)
-  * Input Validation
+None
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)

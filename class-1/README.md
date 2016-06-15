@@ -11,14 +11,16 @@
 	* Create a github service and implement a method that fetches repositories based on a search term.
 
 ###Readings:
-* Apple Documentation:
-	* [Custom URL Schemes](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html)
-	* [NSURLSession](https://developer.apple.com/library/prerelease/ios/documentation/Foundation/Reference/NSURLSession_class/index.html)
-	* [Keychain](https://developer.apple.com/library/ios/documentation/Security/Reference/keychainservices/index.html)
-* General Concepts:
-	* OAuth
-	* HTTP's
-	* REST API's
+* Apple Documentation
+  * Static UITableView’s
+  * UISearchBar
+  * Keychain
+  * UIWindow
+* Swift Programming Guide
+  * Generics
+  * Ternary Operator
+* Programming Concepts
+  * Big O
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)

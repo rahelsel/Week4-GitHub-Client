@@ -8,16 +8,11 @@
 	* Write a function that takes in an array of numbers, and returns the lowest and highest numbers as a tuple.
 
 ##Reading Assignment:
-* Apple Documentation
-  * Static UITableView’s
-  * UISearchBar
-  * Keychain
-  * UIWindow
-* Swift Programming Guide
-  * Generics
-  * Ternary Operator
-* Programming Concepts
-  * Big O
+* Apple Documentation:
+	* [UIViewController Programming Guide](https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457-CH2-SW1)
+	* [UIView Animations Guide](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/AnimatingViews/AnimatingViews.html#//apple_ref/doc/uid/TP40009503-CH6-SW1)
+* Other Resources:
+	* [Custom UIViewController Transitions](https://www.objc.io/issues/5-ios7/view-controller-transitions/)
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)
