@@ -1,27 +1,21 @@
 #Week 4 - Class 1
 ##Homework
+* Implement a custom URL Scheme to allow other apps to redirect into your application.
 * Implement an OAuth workflow in your app that successfully lets the user authenticate with your app.
 * Implement UserDefaults to store the authorization token, so it only does the OAuth process once.
-* Create a Personal Project requirement sheet.
-	* Specify the features of your app.
-	* Rough Navigation Model.
-* **Code Challenge:**
-	* Given an array of ints of odd length, return a new array length 3 containing the elements from the middle of the array. The array length will be at least 3.
-* **Bonus:**
-	* Create a github service and implement a method that fetches repositories based on a search term.
-	* Implement saving to Keychain instead of UserDefaults.
+* On launch, your app needs to check if there is an existing access token, and coordinate appropriately.
+* Come up with a Project Pitch
+ 	* Specify the primary features of your app idea.
+	* What problem does this idea solve?
 
 ###Readings:
+* GitHub API Documentation
+	* Explore some additional endpoints we did not cover in class.
+* [Bridging Objective-C and Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html)  
 * Apple Documentation
   * Static UITableView’s
   * UISearchBar
-  * Keychain
   * UIWindow
-* Swift Programming Guide
-  * Generics
-  * Ternary Operator
-* Programming Concepts
-  * Big O
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)
