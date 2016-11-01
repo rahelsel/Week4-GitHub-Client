@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */; };
-		C2550B621DC7AB3800849D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B611DC7AB3800849D7F /* ViewController.swift */; };
 		C2550B651DC7AB3800849D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2550B631DC7AB3800849D7F /* Main.storyboard */; };
 		C2550B671DC7AB3800849D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2550B661DC7AB3800849D7F /* Assets.xcassets */; };
 		C2550B6A1DC7AB3800849D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2550B681DC7AB3800849D7F /* LaunchScreen.storyboard */; };
 		C2550B721DC7C22E00849D7F /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B711DC7C22E00849D7F /* GithubService.swift */; };
 		C2550B741DC7C45400849D7F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B731DC7C45400849D7F /* Credentials.swift */; };
 		C2550B761DC7E28B00849D7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B751DC7E28B00849D7F /* Extensions.swift */; };
+		C2550B781DC8FA5E00849D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B771DC8FA5E00849D7F /* HomeViewController.swift */; };
+		C2550B7A1DC8FB3F00849D7F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B791DC8FB3F00849D7F /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2550B5C1DC7AB3800849D7F /* GoGoGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGoGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2550B611DC7AB3800849D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2550B641DC7AB3800849D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2550B661DC7AB3800849D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2550B691DC7AB3800849D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		C2550B711DC7C22E00849D7F /* GithubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		C2550B731DC7C45400849D7F /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C2550B751DC7E28B00849D7F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C2550B771DC8FA5E00849D7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C2550B791DC8FB3F00849D7F /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */,
-				C2550B611DC7AB3800849D7F /* ViewController.swift */,
 				C2550B631DC7AB3800849D7F /* Main.storyboard */,
+				C2550B791DC8FB3F00849D7F /* AuthViewController.swift */,
+				C2550B771DC8FA5E00849D7F /* HomeViewController.swift */,
 				C2550B661DC7AB3800849D7F /* Assets.xcassets */,
 				C2550B681DC7AB3800849D7F /* LaunchScreen.storyboard */,
 				C2550B6B1DC7AB3800849D7F /* Info.plist */,
@@ -147,10 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2550B761DC7E28B00849D7F /* Extensions.swift in Sources */,
-				C2550B621DC7AB3800849D7F /* ViewController.swift in Sources */,
 				C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */,
+				C2550B7A1DC8FB3F00849D7F /* AuthViewController.swift in Sources */,
 				C2550B741DC7C45400849D7F /* Credentials.swift in Sources */,
 				C2550B721DC7C22E00849D7F /* GithubService.swift in Sources */,
+				C2550B781DC8FA5E00849D7F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				C2550B701DC7AB3800849D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

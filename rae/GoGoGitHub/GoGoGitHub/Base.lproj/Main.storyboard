@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bBz-XT-gBO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoGoGitHub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" id="BYZ-38-t0r" customClass="AuthViewController" customModule="GoGoGitHub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,40 +21,52 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4W-2s-QBf">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Request Token">
+                                <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.90582973889999996" green="0.99979945179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="requestTokenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQY-BU-yQd"/>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qc6-bq-1eF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoy-B6-WLI">
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Print Token">
-                                    <color key="titleColor" red="0.90582973889999996" green="0.99979945179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="printTokenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gM4-vb-PeH"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNX-ab-ulG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="RWm-xD-6Q5"/>
+                                    <constraint firstAttribute="height" constant="175" id="emK-ri-ulv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qoy-B6-WLI" secondAttribute="bottom" constant="273" id="4du-Np-OMM"/>
                             <constraint firstItem="y4W-2s-QBf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4le-Gv-A6G"/>
                             <constraint firstItem="y4W-2s-QBf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hro-MC-6V5"/>
-                            <constraint firstItem="Qoy-B6-WLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KnO-hI-sjY"/>
                             <constraint firstItem="y4W-2s-QBf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qey-JP-SNC"/>
-                            <constraint firstItem="Qoy-B6-WLI" firstAttribute="top" secondItem="y4W-2s-QBf" secondAttribute="bottom" constant="15.5" id="W0k-fB-lPK"/>
-                            <constraint firstItem="Qoy-B6-WLI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ehS-a6-e0Y"/>
+                            <constraint firstItem="eNX-ab-ulG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="VNc-yZ-Yqa"/>
                             <constraint firstItem="y4W-2s-QBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rkH-LK-ffp"/>
-                            <constraint firstItem="Qoy-B6-WLI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yfe-Ji-rIJ"/>
+                            <constraint firstItem="eNX-ab-ulG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8z-g0-Gi6"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Drp-VH-4wf">
+            <objects>
+                <viewController id="bBz-XT-gBO" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4vI-J8-eSg"/>
+                        <viewControllerLayoutGuide type="bottom" id="h0j-IE-4SY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Y1-AL-tDy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kL-2y-qny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="104"/>
         </scene>
     </scenes>
 </document>
