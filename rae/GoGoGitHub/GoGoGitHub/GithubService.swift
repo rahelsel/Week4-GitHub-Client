@@ -12,6 +12,7 @@ let kBaseUrlString = "https://github.com/login/oauth/"
 
 
 typealias GitHubOAuthCompletion = (Bool)->()
+typealias RepositoriesCompletions = ([Repository]?)->()
 
 
 enum GitHubOAuthError: Error{
@@ -31,7 +32,69 @@ class GithubService{
 
     static let shared = GithubService()
     
-    private init() {}
+    private var session: URLSession
+    private var urlComponents: URLComponents
+    
+    private init() {
+    
+        self.session = URLSession(configuration: .ephemeral)
+        self.urlComponents = URLComponents()
+        configure()
+        
+    }
+    
+    private func configure(){
+        self.urlComponents.scheme = "https"
+        self.urlComponents.host = "api.github.com"
+        
+        if let token = UserDefaults.standard.getAccessToken(){
+            
+            let tokenQueryItem = URLQueryItem(name: "access_token", value: token)
+            
+            urlComponents.queryItems = [tokenQueryItem]
+                
+            }
+    
+    }
+    
+    func fetchRepos(completion: @escaping RepositoriesCompletions){
+        self.configure()
+        self.urlComponents.path = "/user/repos"
+        
+        guard let url = self.urlComponents.url else { completion(nil); return }
+            
+        self.session.dataTask(with: url, completionHandler: {(data, response, error) in
+            if error != nil { completion(nil); return }
+            
+            if let data = data {
+            
+                var repos = [Repository]()
+                
+                do{
+                    if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String: Any]]{
+                        
+                        for repoJSON in json{
+                            if let repository = Repository(json: repoJSON){
+                                repos.append(repository)
+                            }
+                        }
+                        
+                        OperationQueue.main.addOperation {
+                            completion(repos)
+                        }
+                        
+                    }
+                
+                }catch{
+                    print(error)
+                }
+            
+            }
+        
+        
+        }).resume()
+    
+    }
     
     func oAuthWith(parameters: [String: String]){
         

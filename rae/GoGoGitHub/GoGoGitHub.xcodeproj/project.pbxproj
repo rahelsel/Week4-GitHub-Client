@@ -14,8 +14,14 @@
 		C2550B721DC7C22E00849D7F /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B711DC7C22E00849D7F /* GithubService.swift */; };
 		C2550B741DC7C45400849D7F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B731DC7C45400849D7F /* Credentials.swift */; };
 		C2550B761DC7E28B00849D7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B751DC7E28B00849D7F /* Extensions.swift */; };
-		C2550B781DC8FA5E00849D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B771DC8FA5E00849D7F /* HomeViewController.swift */; };
 		C2550B7A1DC8FB3F00849D7F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B791DC8FB3F00849D7F /* AuthViewController.swift */; };
+		C2550B7C1DC9054A00849D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B7B1DC9054A00849D7F /* HomeViewController.swift */; };
+		C2550B7E1DC91AC000849D7F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B7D1DC91AC000849D7F /* Repository.swift */; };
+		C2550B801DC9794800849D7F /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B7F1DC9794800849D7F /* RepoTableViewCell.swift */; };
+		C2550B821DCA6AC400849D7F /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B811DCA6AC400849D7F /* RepoDetailViewController.swift */; };
+		C2550B841DCA6DED00849D7F /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B831DCA6DED00849D7F /* CustomTransition.swift */; };
+		C2550B861DCA96C800849D7F /* RepoDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2550B851DCA96C800849D7F /* RepoDetailCell.xib */; };
+		C2550B881DCA983A00849D7F /* RepoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B871DCA983A00849D7F /* RepoDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +34,14 @@
 		C2550B711DC7C22E00849D7F /* GithubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		C2550B731DC7C45400849D7F /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C2550B751DC7E28B00849D7F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		C2550B771DC8FA5E00849D7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C2550B791DC8FB3F00849D7F /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C2550B7B1DC9054A00849D7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		C2550B7D1DC91AC000849D7F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C2550B7F1DC9794800849D7F /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		C2550B811DCA6AC400849D7F /* RepoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
+		C2550B831DCA6DED00849D7F /* CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
+		C2550B851DCA96C800849D7F /* RepoDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoDetailCell.xib; sourceTree = "<group>"; };
+		C2550B871DCA983A00849D7F /* RepoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +76,18 @@
 			children = (
 				C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */,
 				C2550B631DC7AB3800849D7F /* Main.storyboard */,
+				C2550B851DCA96C800849D7F /* RepoDetailCell.xib */,
+				C2550B871DCA983A00849D7F /* RepoDetailCell.swift */,
+				C2550B811DCA6AC400849D7F /* RepoDetailViewController.swift */,
+				C2550B7B1DC9054A00849D7F /* HomeViewController.swift */,
+				C2550B831DCA6DED00849D7F /* CustomTransition.swift */,
+				C2550B7F1DC9794800849D7F /* RepoTableViewCell.swift */,
 				C2550B791DC8FB3F00849D7F /* AuthViewController.swift */,
-				C2550B771DC8FA5E00849D7F /* HomeViewController.swift */,
 				C2550B661DC7AB3800849D7F /* Assets.xcassets */,
 				C2550B681DC7AB3800849D7F /* LaunchScreen.storyboard */,
 				C2550B6B1DC7AB3800849D7F /* Info.plist */,
 				C2550B711DC7C22E00849D7F /* GithubService.swift */,
+				C2550B7D1DC91AC000849D7F /* Repository.swift */,
 				C2550B751DC7E28B00849D7F /* Extensions.swift */,
 				C2550B731DC7C45400849D7F /* Credentials.swift */,
 			);
@@ -137,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2550B6A1DC7AB3800849D7F /* LaunchScreen.storyboard in Resources */,
+				C2550B861DCA96C800849D7F /* RepoDetailCell.xib in Resources */,
 				C2550B671DC7AB3800849D7F /* Assets.xcassets in Resources */,
 				C2550B651DC7AB3800849D7F /* Main.storyboard in Resources */,
 			);
@@ -149,12 +168,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2550B7E1DC91AC000849D7F /* Repository.swift in Sources */,
 				C2550B761DC7E28B00849D7F /* Extensions.swift in Sources */,
 				C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */,
+				C2550B801DC9794800849D7F /* RepoTableViewCell.swift in Sources */,
 				C2550B7A1DC8FB3F00849D7F /* AuthViewController.swift in Sources */,
 				C2550B741DC7C45400849D7F /* Credentials.swift in Sources */,
 				C2550B721DC7C22E00849D7F /* GithubService.swift in Sources */,
-				C2550B781DC8FA5E00849D7F /* HomeViewController.swift in Sources */,
+				C2550B841DCA6DED00849D7F /* CustomTransition.swift in Sources */,
+				C2550B7C1DC9054A00849D7F /* HomeViewController.swift in Sources */,
+				C2550B821DCA6AC400849D7F /* RepoDetailViewController.swift in Sources */,
+				C2550B881DCA983A00849D7F /* RepoDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

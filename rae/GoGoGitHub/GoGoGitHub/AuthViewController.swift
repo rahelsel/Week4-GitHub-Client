@@ -24,5 +24,10 @@ class AuthViewController: UIViewController {
         GithubService.shared.oAuthWith(parameters: parameters)
         
     }
+    
+    func dismissAuthController(){
+        self.view.removeFromSuperview()
+        self.removeFromParentViewController()
+    }
 
 }
