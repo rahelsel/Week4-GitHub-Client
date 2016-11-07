@@ -22,6 +22,10 @@
 		C2550B841DCA6DED00849D7F /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B831DCA6DED00849D7F /* CustomTransition.swift */; };
 		C2550B861DCA96C800849D7F /* RepoDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2550B851DCA96C800849D7F /* RepoDetailCell.xib */; };
 		C2550B881DCA983A00849D7F /* RepoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B871DCA983A00849D7F /* RepoDetailCell.swift */; };
+		C2550B8A1DCBA50900849D7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B891DCBA50900849D7F /* User.swift */; };
+		C2550B8C1DCBA5C400849D7F /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B8B1DCBA5C400849D7F /* UserSearchViewController.swift */; };
+		C2550B8E1DCBB78C00849D7F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B8D1DCBB78C00849D7F /* WebViewController.swift */; };
+		C2550B901DCBF52500849D7F /* AvatarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B8F1DCBF52500849D7F /* AvatarCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		C2550B831DCA6DED00849D7F /* CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		C2550B851DCA96C800849D7F /* RepoDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoDetailCell.xib; sourceTree = "<group>"; };
 		C2550B871DCA983A00849D7F /* RepoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailCell.swift; sourceTree = "<group>"; };
+		C2550B891DCBA50900849D7F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		C2550B8B1DCBA5C400849D7F /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		C2550B8D1DCBB78C00849D7F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../WebViewController.swift; sourceTree = "<group>"; };
+		C2550B8F1DCBF52500849D7F /* AvatarCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */,
+				C2550B8D1DCBB78C00849D7F /* WebViewController.swift */,
+				C2550B891DCBA50900849D7F /* User.swift */,
 				C2550B631DC7AB3800849D7F /* Main.storyboard */,
 				C2550B851DCA96C800849D7F /* RepoDetailCell.xib */,
 				C2550B871DCA983A00849D7F /* RepoDetailCell.swift */,
@@ -90,6 +100,8 @@
 				C2550B7D1DC91AC000849D7F /* Repository.swift */,
 				C2550B751DC7E28B00849D7F /* Extensions.swift */,
 				C2550B731DC7C45400849D7F /* Credentials.swift */,
+				C2550B8B1DCBA5C400849D7F /* UserSearchViewController.swift */,
+				C2550B8F1DCBF52500849D7F /* AvatarCollectionViewController.swift */,
 			);
 			path = GoGoGitHub;
 			sourceTree = "<group>";
@@ -173,10 +185,14 @@
 				C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */,
 				C2550B801DC9794800849D7F /* RepoTableViewCell.swift in Sources */,
 				C2550B7A1DC8FB3F00849D7F /* AuthViewController.swift in Sources */,
+				C2550B901DCBF52500849D7F /* AvatarCollectionViewController.swift in Sources */,
 				C2550B741DC7C45400849D7F /* Credentials.swift in Sources */,
 				C2550B721DC7C22E00849D7F /* GithubService.swift in Sources */,
 				C2550B841DCA6DED00849D7F /* CustomTransition.swift in Sources */,
+				C2550B8A1DCBA50900849D7F /* User.swift in Sources */,
+				C2550B8C1DCBA5C400849D7F /* UserSearchViewController.swift in Sources */,
 				C2550B7C1DC9054A00849D7F /* HomeViewController.swift in Sources */,
+				C2550B8E1DCBB78C00849D7F /* WebViewController.swift in Sources */,
 				C2550B821DCA6AC400849D7F /* RepoDetailViewController.swift in Sources */,
 				C2550B881DCA983A00849D7F /* RepoDetailCell.swift in Sources */,
 			);
