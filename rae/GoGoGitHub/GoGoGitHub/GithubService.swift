@@ -13,7 +13,7 @@ let kBaseUrlString = "https://github.com/login/oauth/"
 
 typealias GitHubOAuthCompletion = (Bool)->()
 
-
+// MARK: Enums
 enum GitHubOAuthError: Error{
 
     case extractingCode(String)
@@ -30,6 +30,9 @@ enum SaveOptions{
 class GithubService{
 
     static let shared = GithubService()
+    
+    private var session: URLSession
+    private var urlComponents: URLComponents
     
     private init() {}
     

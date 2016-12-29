@@ -6,7 +6,15 @@
 //  Copyright © 2016 Rachael A Helsel. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIResponder {
+    
+    static var identifier: String {
+    
+        return String(describing: self)
+    }
+}
 
 extension UserDefaults{
     

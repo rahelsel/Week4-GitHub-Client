@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20AA3901E15BE4A002DB93A /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20AA38F1E15BE4A002DB93A /* CustomTransition.swift */; };
 		C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */; };
 		C2550B621DC7AB3800849D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2550B611DC7AB3800849D7F /* ViewController.swift */; };
 		C2550B651DC7AB3800849D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2550B631DC7AB3800849D7F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20AA38F1E15BE4A002DB93A /* CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		C2550B5C1DC7AB3800849D7F /* GoGoGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGoGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2550B5F1DC7AB3800849D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2550B611DC7AB3800849D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				C2550B681DC7AB3800849D7F /* LaunchScreen.storyboard */,
 				C2550B6B1DC7AB3800849D7F /* Info.plist */,
 				C2550B711DC7C22E00849D7F /* GithubService.swift */,
+				C20AA38F1E15BE4A002DB93A /* CustomTransition.swift */,
 				C2550B751DC7E28B00849D7F /* Extensions.swift */,
 				C2550B731DC7C45400849D7F /* Credentials.swift */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2550B761DC7E28B00849D7F /* Extensions.swift in Sources */,
+				C20AA3901E15BE4A002DB93A /* CustomTransition.swift in Sources */,
 				C2550B621DC7AB3800849D7F /* ViewController.swift in Sources */,
 				C2550B601DC7AB3800849D7F /* AppDelegate.swift in Sources */,
 				C2550B741DC7C45400849D7F /* Credentials.swift in Sources */,
@@ -314,6 +318,7 @@
 				C2550B701DC7AB3800849D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
